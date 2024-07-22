@@ -21,6 +21,7 @@ prepare() {
 build() {
     cd "${pkgname}-v${pkgver}"
     ./configure --prefix='/usr' --enable-custom-modes
+    sed -i '/memmove(/s/frame_size/(frame_size -1) /' tests/tandem-test.c
     make
 }
 

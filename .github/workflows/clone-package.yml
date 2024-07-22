@@ -51,6 +51,7 @@ jobs:
       #     sed -i "/\bdepends=/s/(/\('xpto\' 'xpto3\' 'xpto2\' /" PKGBUILD
       #     sed -i "/makedepends=/s/(/\('xpto\' 'xpto2\' 'xpto3\' /" PKGBUILD
       #     sed -i '/\bdepends=/!b; :a; n; a\    '\'xpto\' PKGBUILD
+      #     #echo 'sed -i '/memmove(/s/frame_size/(frame_size -1) /' celt/src/celt-v0.11.3/tests/tandem-test.c' no PKGBUILD na linha antes do make em build()
 
       - name: Update github
         shell: bash
